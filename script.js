@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const updateCount = () => {
           const target = +counter.getAttribute("data-target");
           const count = +counter.innerText.replace(/[^0-9]/g, "");
-          const increment = target / 200;
+          const increment = target / 2000;
           if (count < target) {
             counter.innerText = "+" + Math.ceil(count + increment).toLocaleString();
             setTimeout(updateCount, 10);
@@ -46,7 +46,7 @@ function toggleMenu() {
       const scrollDiff = currentScroll - lastScrollTop;
 
       if (Math.abs(scrollDiff) > threshold) {
-        if (scrollDiff > 0) {
+        if (scrollDiff > 5) {
           // Scrolled down
           searchBar.classList.add("hide-on-scroll");
         } else {
