@@ -53,7 +53,7 @@ function toggleMenu() {
           // Scrolled up
           searchBar.classList.remove("hide-on-scroll");
         }
-        // lastScrollTop = currentScroll;
+        lastScrollTop = currentScroll;
       }
     }
   });
