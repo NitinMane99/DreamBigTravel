@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+    
+    
+  
+  <!-- <header>
+    <img src="logo2.png" alt="Logo" class="logo">
+    <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>Group Tours</li>
+      <li>Personal Tours</li>
+      <li>Awards & Appreciations</li>
+      <li>Contact Us</li>
+      <li>About Us</li>
+    </ul>
+  </nav>
+    <div class="search-area">
+      <input type="text" placeholder="Where do you want to travel?">
+      <input type="text" placeholder="₹ Budget">
+    </div>
+  </header> -->
+
+  <header>
+  <img src="logo2.png" alt="Logo" class="logo">
+
+  <!-- Toggle Button (Hamburger or Close) -->
+  <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</button>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <!-- Close Button inside mobile menu -->
+    <button class="close-btn" id="closeBtn" onclick="toggleMenu()">✕</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>Group Tours</li>
+      <li>Personal Tours</li>
+      <li>Awards & Appreciations</li>
+      <li>Contact Us</li>
+      <li>About Us</li>
+    </ul>
+  </nav>
+
+  <div class="search-bar-wrapper" id="searchBarWrapper">
+  <div class="search-area">
+    <input type="text" placeholder="Where do you want to travel?">
+    <input type="text" placeholder="₹ Budget">
+    <button class="search-btn">Search</button>
+  </div>
+</div>
+
+</header>
+
+
+
+  
+
+   <section class="hero" style="background: url('home.png') center/cover no-repeat;">
+  <div class="hero-content">
+    <h2>Pocket Kashmir From Pune</h2>
+    <p>Katra, Srinagar, Sonmarg, Gulmarg, Pahalgam</p>
+    <p>10 Days, 9 | Starting from ₹13,999/-</p>
+    <button>Book Now</button>
+  </div>
+</section>
+
+  <section class="packages">
+    <h2>Travel Packages</h2>
+    <p>Deals made especially for you, Everything you need—on a budget.</p>
+    <div class="package-grid">
+      <div class="package-card">
+        <img src="blog.jpeg" alt="Himachal">
+        <div class="package-content">
+          <h4>Himachal Pocket From Pune</h4>
+          <p>9 Days & 8 Nights</p>
+          <p class="price">₹12,599/-</p>
+          <button>Get Detail</button>
+          <button>Enquire Now</button>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="blog1.jpeg" alt="Char Dham">
+        <div class="package-content">
+          <h4>Char Dham Yatra From Pune</h4>
+          <p>13 Days & 12 Nights</p>
+          <p class="price">₹23,499/-</p>
+          <button>Get Detail</button>
+          <button>Enquire Now</button>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="blog.jpeg" alt="Kedarnath">
+        <div class="package-content">
+          <h4>Kedarnath Tungnath Chopta From</h4>
+          <p>7 Days & 6 Nights</p>
+          <p class="price">₹11,799/-</p>
+          <button>Get Detail</button>
+          <button>Enquire Now</button>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="blog.jpeg" alt="Kedarnath">
+        <div class="package-content">
+          <h4>Kedarnath Tungnath Chopta From</h4>
+          <p>7 Days & 6 Nights</p>
+          <p class="price">₹11,799/-</p>
+          <button>Get Detail</button>
+          <button>Enquire Now</button>
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <section class="rated-locations">
+    <h2><em>Best Top</em> <span style="color: orange">Rated Locations</span></h2>
+    <p>Pick top destinations for your next holiday</p>
+    <div class="package-grid">
+      <div class="package-card">
+        <img src="blog1.jpeg" alt="Himachal Pradesh">
+        <div class="package-content">
+          <h4>Himachal Pradesh</h4>
+          <p>70k Customers Visited</p>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="blog1.jpeg" alt="Jammu and Kashmir">
+        <div class="package-content">
+          <h4>Jammu and Kashmir</h4>
+          <p>25k Customers Visited</p>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="blog.jpeg" alt="Kerala">
+        <div class="package-content">
+          <h4>Kerala</h4>
+          <p>14k Customers Visited</p>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="blog.jpeg" alt="Uttarakhand">
+        <div class="package-content">
+          <h4>Uttarakhand</h4>
+          <p>60k Customers Visited</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories-section">
+  <div class="categories-header">
+    <h3>Explore</h3>
+    <h2>Top Categories</h2>
+    <p>Grab best offer from our top categories...</p>
+    <div class="categories-tabs">
+      <button class="active">Group Tours</button>
+      <button>Personal Tours</button>
+      <button>Couple/Honeymoon Tours</button>
+    </div>
+  </div>
+
+  <div class="cards-container">
+    <!-- Card 1 -->
+    <div class="tour-card">
+      <div class="discount-badge">35% OFF</div>
+      <img src="blog.jpeg" alt="Himachal Tour" />
+      <div class="price-badge">₹ 12,599/-</div>
+      <h4>Himachal Pocket From Pune</h4>
+      <p><span>🕓</span> 9 Days & 8 Nights</p>
+      <p class="destinations">Shimla, Manali, Kullu, Dalhousie, Khajia..</p>
+      <span class="tag">Group</span>
+      <div class="card-buttons">
+        <button class="detail-btn">Get Detail</button>
+        <button class="enquire-btn">Enquire Now</button>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <div class="discount-badge">35% OFF</div>
+      <img src="blog.jpeg" alt="Himachal Tour" />
+      <div class="price-badge">₹ 12,599/-</div>
+      <h4>Himachal Pocket From Pune</h4>
+      <p><span>🕓</span> 9 Days & 8 Nights</p>
+      <p class="destinations">Shimla, Manali, Kullu, Dalhousie, Khajia..</p>
+      <span class="tag">Group</span>
+      <div class="card-buttons">
+        <button class="detail-btn">Get Detail</button>
+        <button class="enquire-btn">Enquire Now</button>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <div class="discount-badge">35% OFF</div>
+      <img src="blog.jpeg" alt="Himachal Tour" />
+      <div class="price-badge">₹ 12,599/-</div>
+      <h4>Himachal Pocket From Pune</h4>
+      <p><span>🕓</span> 9 Days & 8 Nights</p>
+      <p class="destinations">Shimla, Manali, Kullu, Dalhousie, Khajia..</p>
+      <span class="tag">Group</span>
+      <div class="card-buttons">
+        <button class="detail-btn">Get Detail</button>
+        <button class="enquire-btn">Enquire Now</button>
+      </div>
+    </div>
+    <div class="tour-card">
+      <div class="discount-badge">35% OFF</div>
+      <img src="blog.jpeg" alt="Himachal Tour" />
+      <div class="price-badge">₹ 12,599/-</div>
+      <h4>Himachal Pocket From Pune</h4>
+      <p><span>🕓</span> 9 Days & 8 Nights</p>
+      <p class="destinations">Shimla, Manali, Kullu, Dalhousie, Khajia..</p>
+      <span class="tag">Group</span>
+      <div class="card-buttons">
+        <button class="detail-btn">Get Detail</button>
+        <button class="enquire-btn">Enquire Now</button>
+      </div>
+    </div>
+
+    <!-- Repeat similar cards (like Kedarnath, Ayodhya) -->
+    <!-- Card 2 and Card 3 will follow same structure -->
+  </div>
+</section>
+
+
+  <section class="stats-section">
+    <div class="stats-title">
+      <h2><em>Our</em> <span style="color: orange">Tours Statistics</span></h2>
+      <p style="color: #555">Still........Counting on</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item orange">
+        <span class="stat-number" data-target="17846">+0</span>
+        <div>TOTAL PLACES</div>
+      </div>
+      <div class="stat-item yellow">
+        <span class="stat-number" data-target="5463">+0</span>
+        <div>POPULAR PLACES</div>
+      </div>
+      <div class="stat-item blue">
+        <span class="stat-number" data-target="23453">+0</span>
+        <div>OUR TRIPS</div>
+      </div>
+      <div class="stat-item green">
+        <span class="stat-number" data-target="600000">+0</span>
+        <div>HAPPY CLIENTS</div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<section class="customer-section">
+    <h2>Our</h2>
+    <h1>Customer Says</h1>
+    <p>What Customer say about us......We value our every customer</p>
+
+    <div class="video-wrapper">
+      <video autoplay muted loop>
+        <source src="your-testimonial-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <p>PIONEER IN THE <span class="highlight">TRAVEL INDUSTRY</span>, WE TAKE PRIDE IN OUR LEGACY</p>
+      </div>
+      <!-- <img src="your-logo.png" alt="Logo"  /> -->
+    </div>
+  </section>
+
+
+<section class="contact-branch">
+  <h2>Contact Our Branch</h2>
+  <p>Feel free to contact us by telephone, email or meeting us in person.</p>
+
+  <div class="contact-container">
+    <div class="branch-info">
+      <h3>Pune Office</h3>
+      <p>📞 +91-86249 67763</p>
+      <p>🏢 Office No. 204, 2nd Floor,<br>
+        Sunrise Business Plaza,<br>
+        Baner Road, Near Balewadi High Street,<br>
+        Pune, Maharashtra 411045</p>
+      <button class="branch-button">Our Branches</button>
+    </div>
+
+    <div class="branch-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.4832196346334!2d73.76795221415833!3d18.551998072636977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf8806cecb87%3A0xcfb33f8d7a03e8f3!2sSunrise%20Business%20Plaza%2C%20Baner%20Rd%2C%20Baner%2C%20Pune%2C%20Maharashtra%20411045!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter-section">
+  <div class="newsletter-content">
+    <h3>Subscribe</h3>
+    <h2>Our Newsletter</h2>
+    <p>Stay informed about exciting destinations and exclusive travel deals.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+
+  <footer>
+    <div style="background-color: #333; color: white; padding: 20px; text-align: center;">
+  <img src="logo2.png" alt="Logo" class="logo" style="width: 80px; margin-bottom: 10px;">
+  <p>Explore India & beyond with expert-crafted tours, unforgettable moments, and unmatched comfort.</p>
+
+  <div class="social-icons" style="margin-top: 15px; display: flex; justify-content: center; gap: 15px;">
+    
+    <!-- Facebook -->
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff" viewBox="0 0 24 24">
+        <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 
+        24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 
+        4.659-4.788 1.325 0 2.466.099 2.797.143v3.24h-1.92c-1.504 
+        0-1.796.716-1.796 1.766v2.316h3.587l-.467 3.622h-3.12V24h6.116c.73 
+        0 1.324-.593 1.324-1.326V1.326C24 .593 23.407 0 22.675 0z"/>
+      </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 
+        2.633.338 3.608 1.313.975.975 1.251 2.242 
+        1.313 3.608.058 1.266.07 1.645.07 4.85s-.012 
+        3.584-.07 4.85c-.062 1.366-.338 2.633-1.313 
+        3.608-.975.975-2.242 1.251-3.608 
+        1.313-1.266.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.338-3.608-1.313-.975-.975-1.251-2.242-1.313-3.608C2.175 
+        15.747 2.163 15.368 2.163 12s.012-3.584.07-4.85c.062-1.366.338-2.633 
+        1.313-3.608.975-.975 2.242-1.251 
+        3.608-1.313C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 
+        0 8.332.013 7.052.072 5.773.132 4.602.414 3.603 
+        1.414 2.604 2.413 2.322 3.584 2.262 
+        4.863.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 
+        4.948.06 1.279.342 2.45 1.342 
+        3.45 1 1 2.171 1.282 3.45 
+        1.342 1.28.059 1.689.072 4.948.072s3.668-.013 
+        4.948-.072c1.279-.06 2.45-.342 3.45-1.342 
+        1-1 1.282-2.171 1.342-3.45.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.06-1.279-.342-2.45-1.342-3.45C19.398.414 
+        18.227.132 16.948.072 15.668.013 15.259 
+        0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 
+        6.162 6.162 0 0 0 0-12.324zm0 
+        10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 
+        8zm6.406-11.845a1.44 1.44 0 1 0 0 
+        2.88 1.44 1.44 0 0 0 0-2.88z"/>
+      </svg>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff" viewBox="0 0 24 24">
+        <path d="M19.615 3.184C21.403 3.67 22 5.163 22 8.091v7.818c0 
+        2.928-.597 4.421-2.385 4.907C17.74 21.22 12 
+        21.22 12 21.22s-5.74 0-7.615-.404C2.597 
+        20.33 2 18.837 2 15.909V8.091c0-2.928.597-4.421 
+        2.385-4.907C6.26 2.78 12 2.78 12 2.78s5.74 
+        0 7.615.404zM10 15.5l6-3.5-6-3.5v7z"/>
+      </svg>
+    </a>
+
+  </div>
+</div>
+
+
+    </div>
+    <div>
+      <h4>Useful Links</h4>
+      <ul>
+        <li>Dashboard</li>
+        <li>Awards & Certificates</li>
+        <li>About Us</li>
+        <li>Group Tours</li>
+        <li>Personal Tour</li>
+        <li>Customized Tours</li>
+        <li>Our Branches</li>
+        <li>Vendor Enrollment</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company Policies</h4>
+      <ul>
+        <li>Booking Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Cancellation & Refund Policy</li>
+        <li>KH Partner Terms</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact Info</h4>
+      <p>Unit no 408, A Tower, ITHUM Building,<br />Sector 62, Pune,411004</p>
+      <p>+91-86249 67763</p>
+      <p>Enquire online</p>
+      <p>Career With Us</p>
+    </div>
+  </footer>
+  <div class="footer-note">
+    Dream Big Travel Private Limited Copyright © 2025 All Rights Reserved.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
