@@ -46,7 +46,7 @@ function toggleMenu() {
       const scrollDiff = currentScroll - lastScrollTop;
 
       if (Math.abs(scrollDiff) > threshold) {
-        if (scrollDiff > 5) {
+        if (scrollDiff > 0) {
           // Scrolled down
           searchBar.classList.add("hide-on-scroll");
         } else {
